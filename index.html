@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liminal — Philosophy Made Easy</title>
+  <meta name="description" content="A four-year philosophy curriculum in your pocket. 92 lessons, 48 philosophers, on-device audio narration. Ad-free, offline, paid once.">
+  <meta name="theme-color" content="#FBF7F0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14110E" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://omardgraz.github.io/Liminal-Support/">
+  <meta property="og:title" content="Liminal — Philosophy Made Easy">
+  <meta property="og:description" content="A four-year philosophy curriculum in your pocket. Ad-free, offline, paid once.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omardgraz.github.io/Liminal-Support/">
+  <style>
+    :root {
+      --bg: #FBF7F0;
+      --surface: #FFFFFF;
+      --card: #FFFCF6;
+      --divider: #E7DFD0;
+      --text: #1E1A14;
+      --text-2: #5C5246;
+      --text-3: #8A7F70;
+      --brand: #5B3520;
+      --brand-soft: rgba(140, 85, 58, 0.12);
+      --accent: #6A4C93;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14110E;
+        --surface: #1F1B16;
+        --card: #241F19;
+        --divider: #3A322A;
+        --text: #F3ECDD;
+        --text-2: #B8AE9C;
+        --text-3: #847A6B;
+        --brand: #E8C5A4;
+        --brand-soft: rgba(212, 165, 136, 0.15);
+        --accent: #B497D6;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg); color: var(--text);
+      font-family: "Hoefler Text", "Iowan Old Style", "Apple Garamond", Georgia, "Times New Roman", serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.55;
+    }
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+    a:hover { border-bottom-color: var(--accent); }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 32px 24px 80px; }
+    header.site {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 24px 0 12px;
+    }
+    .brand {
+      font-style: italic; font-weight: 600; font-size: 22px;
+      color: var(--brand); border-bottom: none;
+    }
+    nav.site a {
+      margin-left: 18px; font-size: 14px; color: var(--text-2);
+      border-bottom: none;
+    }
+    nav.site a:hover { color: var(--text); }
+    .hero {
+      padding: 56px 0 32px;
+    }
+    .eyebrow {
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+      font-size: 12px; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--accent); margin: 0 0 12px;
+    }
+    h1 {
+      font-size: clamp(40px, 7vw, 64px); line-height: 1.05;
+      margin: 0 0 16px; letter-spacing: -0.01em;
+      color: var(--brand);
+    }
+    .lede {
+      font-size: clamp(18px, 2.2vw, 22px);
+      color: var(--text-2); margin: 0 0 24px; max-width: 600px;
+    }
+    .cta-row {
+      display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px;
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 18px; border-radius: 999px;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+      font-size: 15px; font-weight: 600;
+      background: var(--brand); color: var(--bg);
+      border-bottom: none;
+    }
+    .btn:hover { opacity: 0.9; border-bottom: none; }
+    .btn.secondary {
+      background: transparent; color: var(--text);
+      border: 1px solid var(--divider);
+    }
+    section {
+      padding: 32px 0; border-top: 1px solid var(--divider);
+    }
+    h2 {
+      font-size: 28px; margin: 0 0 16px;
+      color: var(--text); letter-spacing: -0.005em;
+    }
+    h3 {
+      font-size: 17px; margin: 24px 0 6px;
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+      font-weight: 600; letter-spacing: 0.01em;
+    }
+    p { margin: 0 0 14px; color: var(--text); }
+    ul { padding-left: 22px; margin: 0 0 14px; }
+    li { margin-bottom: 8px; color: var(--text); }
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px; margin-top: 8px;
+    }
+    .tile {
+      background: var(--card); border: 1px solid var(--divider);
+      border-radius: 14px; padding: 18px 16px;
+    }
+    .tile h3 {
+      margin: 0 0 4px; color: var(--brand);
+      font-family: "Hoefler Text", Georgia, serif; font-style: italic;
+      font-weight: 600; font-size: 18px;
+    }
+    .tile p {
+      margin: 0; color: var(--text-2); font-size: 15px;
+    }
+    .quote {
+      margin: 28px 0; padding: 22px 24px;
+      background: var(--brand-soft); border-radius: 16px;
+      font-style: italic; font-size: 19px;
+    }
+    .quote .author {
+      display: block; margin-top: 8px;
+      font-style: normal; font-size: 14px;
+      color: var(--text-2);
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+    }
+    footer.site {
+      margin-top: 64px; padding-top: 24px;
+      border-top: 1px solid var(--divider);
+      color: var(--text-3); font-size: 13px;
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+    }
+    footer.site a { color: var(--text-2); border-bottom: none; }
+    footer.site a:hover { color: var(--text); }
+    @media (max-width: 480px) {
+      .wrap { padding-left: 18px; padding-right: 18px; }
+      header.site { flex-direction: column; align-items: flex-start; gap: 10px; }
+      nav.site a { margin-left: 0; margin-right: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="site">
+      <a class="brand" href="/">Liminal</a>
+      <nav class="site">
+        <a href="/Liminal-Support/support.html">Support</a>
+        <a href="/Liminal-Support/privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">A four-year philosophy curriculum</p>
+      <h1>Philosophy made easy.</h1>
+      <p class="lede">From the Pre-Socratics of Miletus to contemporary debates on consciousness — Liminal is the philosophy degree you didn't take, in your pocket, in your own time.</p>
+      <div class="cta-row">
+        <a class="btn" href="#">Coming soon to the App Store</a>
+        <a class="btn secondary" href="/Liminal-Support/support.html">Support</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>What's inside</h2>
+      <div class="grid">
+        <div class="tile"><h3>92 lessons</h3><p>22 courses, organized into four years from Plato to Wittgenstein.</p></div>
+        <div class="tile"><h3>48 philosophers</h3><p>From Thales to Simone de Beauvoir. Biographies, ideas, quotes, influence maps.</p></div>
+        <div class="tile"><h3>82 key terms</h3><p>A searchable glossary cross-linked with the lessons.</p></div>
+        <div class="tile"><h3>16 thought experiments</h3><p>Plato's Cave, the Trolley Problem, Mary the Color Scientist, and more.</p></div>
+        <div class="tile"><h3>23 quizzes</h3><p>Test your understanding with explanations on every answer.</p></div>
+        <div class="tile"><h3>Spaced-repetition flashcards</h3><p>An SM-2 review system for the key terms — so they stick.</p></div>
+        <div class="tile"><h3>On-device audio narration</h3><p>Listen on a walk, on the bus, in bed. No subscription, no streaming.</p></div>
+        <div class="tile"><h3>Home screen widgets</h3><p>Quote, Term, and Philosopher of the day — your daily nudge to think.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>The curriculum</h2>
+      <p><strong>Year 1 — Ancient.</strong> Pre-Socratics, Socrates, Plato, Aristotle, Stoicism, Epicureanism, Skepticism, Neoplatonism.</p>
+      <p><strong>Year 2 — Medieval &amp; Early Modern.</strong> Augustine, Islamic and Jewish philosophy, Aquinas, Machiavelli, Hobbes, Descartes, Spinoza, Leibniz, Locke, Berkeley, Hume.</p>
+      <p><strong>Year 3 — Modern.</strong> Kant, German Idealism, Bentham, Mill, Marx, Schopenhauer, Kierkegaard, Nietzsche, American Pragmatism.</p>
+      <p><strong>Year 4 — Contemporary.</strong> Frege, Russell, Wittgenstein, the Vienna Circle, Quine, Husserl, Heidegger, Sartre, Beauvoir, Camus, the Frankfurt School, Foucault, Derrida, Rawls, Kuhn, philosophy of mind, language, science, and ethics.</p>
+    </section>
+
+    <section>
+      <div class="quote">
+        Thou hast made us for thyself, O Lord, and our heart is restless until it rests in Thee.
+        <span class="author">— Augustine, Confessions</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>No ads. No subscriptions. No network.</h2>
+      <p>Liminal collects no data, serves no ads, and makes zero network calls. Every lesson, every philosopher, every quiz lives on your device. Buy it once. Own it forever.</p>
+    </section>
+
+    <footer class="site">
+      <span>© Liminal · made by <a href="https://github.com/omardgraz">omardgraz</a></span>
+      <span>
+        <a href="/Liminal-Support/support.html">Support</a> ·
+        <a href="/Liminal-Support/privacy.html">Privacy</a>
+      </span>
+    </footer>
+
+  </div>
+</body>
+</html>

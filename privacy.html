@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Liminal</title>
+  <meta name="description" content="Liminal collects no data, makes no network calls, and uses no third-party SDKs. All user state lives on your device.">
+  <meta name="theme-color" content="#FBF7F0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14110E" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://omardgraz.github.io/Liminal-Support/privacy.html">
+  <style>
+    :root {
+      --bg: #FBF7F0;
+      --surface: #FFFFFF;
+      --card: #FFFCF6;
+      --divider: #E7DFD0;
+      --text: #1E1A14;
+      --text-2: #5C5246;
+      --text-3: #8A7F70;
+      --brand: #5B3520;
+      --brand-soft: rgba(140, 85, 58, 0.12);
+      --accent: #6A4C93;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14110E;
+        --surface: #1F1B16;
+        --card: #241F19;
+        --divider: #3A322A;
+        --text: #F3ECDD;
+        --text-2: #B8AE9C;
+        --text-3: #847A6B;
+        --brand: #E8C5A4;
+        --brand-soft: rgba(212, 165, 136, 0.15);
+        --accent: #B497D6;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg); color: var(--text);
+      font-family: "Hoefler Text", "Iowan Old Style", "Apple Garamond", Georgia, "Times New Roman", serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+    a:hover { border-bottom-color: var(--accent); }
+    .wrap { max-width: 680px; margin: 0 auto; padding: 32px 24px 80px; }
+    header.site {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 24px 0 12px;
+    }
+    .brand {
+      font-style: italic; font-weight: 600; font-size: 22px;
+      color: var(--brand); border-bottom: none;
+    }
+    nav.site a {
+      margin-left: 18px; font-size: 14px; color: var(--text-2);
+      border-bottom: none;
+    }
+    nav.site a:hover { color: var(--text); }
+    .page-eyebrow {
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+      font-size: 12px; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--accent); margin: 48px 0 12px;
+    }
+    h1 {
+      font-size: clamp(36px, 5vw, 48px); line-height: 1.1;
+      margin: 0 0 8px; letter-spacing: -0.005em;
+      color: var(--brand);
+    }
+    .effective {
+      color: var(--text-3); font-size: 14px; margin: 0 0 32px;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+    }
+    .lead {
+      background: var(--brand-soft);
+      padding: 20px 22px; border-radius: 14px;
+      font-size: 18px; margin: 0 0 32px;
+    }
+    h2 {
+      font-size: 22px; margin: 36px 0 12px;
+      color: var(--text); letter-spacing: -0.005em;
+      border-bottom: 1px solid var(--divider); padding-bottom: 6px;
+    }
+    p { margin: 0 0 14px; color: var(--text); }
+    ul { padding-left: 22px; margin: 0 0 14px; }
+    li { margin-bottom: 8px; color: var(--text); }
+    strong { color: var(--text); }
+    footer.site {
+      margin-top: 64px; padding-top: 24px;
+      border-top: 1px solid var(--divider);
+      color: var(--text-3); font-size: 13px;
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+    }
+    footer.site a { color: var(--text-2); border-bottom: none; }
+    footer.site a:hover { color: var(--text); }
+    @media (max-width: 480px) {
+      .wrap { padding-left: 18px; padding-right: 18px; }
+      header.site { flex-direction: column; align-items: flex-start; gap: 10px; }
+      nav.site a { margin-left: 0; margin-right: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="site">
+      <a class="brand" href="/Liminal-Support/">Liminal</a>
+      <nav class="site">
+        <a href="/Liminal-Support/">Home</a>
+        <a href="/Liminal-Support/support.html">Support</a>
+      </nav>
+    </header>
+
+    <p class="page-eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="effective">Effective: 16 May 2026</p>
+
+    <p class="lead">
+      Liminal does not collect, store, transmit, or share any personal information. The app makes zero network calls. There is nothing to leak.
+    </p>
+
+    <h2>What we collect</h2>
+    <p>Nothing. Liminal has no servers, no accounts, no analytics, no advertising, and no third-party SDKs. The app does not connect to the internet at any point.</p>
+
+    <h2>What's stored on your device</h2>
+    <p>To provide the app's features, Liminal stores the following information <strong>locally</strong> on your device, using Apple's standard SwiftData framework:</p>
+    <ul>
+      <li>Your reading progress (which lessons you've started or completed, and when you last opened them)</li>
+      <li>Your bookmarks (lessons, philosophers, and glossary terms you've saved)</li>
+      <li>Your personal notes (anything you write in the Notes feature or in response to a thought experiment)</li>
+      <li>Your spaced-repetition flashcard history (review dates, ease factors, intervals)</li>
+      <li>Your quiz attempts (scores and timestamps)</li>
+    </ul>
+    <p>This data never leaves your device. It is not sent to us. It is not sent to anyone. If you delete the app, this data is deleted with it. If you reset your device or restore from an iCloud backup that was made of the app, iOS itself handles that — Liminal has no role in it.</p>
+
+    <h2>Apple's role</h2>
+    <p>If you purchased Liminal through the App Store, Apple receives information about that transaction under <a href="https://www.apple.com/legal/privacy/">Apple's own privacy policy</a>. We do not see, receive, or store any of this transactional information.</p>
+
+    <h2>Children</h2>
+    <p>Liminal is rated 4+ and contains no objectionable content. It does not collect data from anyone — including children. It does not contain advertising, links to external services, or in-app purchases.</p>
+
+    <h2>Permissions</h2>
+    <p>Liminal does not request access to your camera, microphone, contacts, location, photos, notifications, health data, or any other sensitive information. The only system permission it relies on is the standard "Background Audio" entitlement, which keeps lesson narration playing when you lock your screen — the same permission used by audiobook apps.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy is ever updated, the new effective date will appear at the top of this page. Material changes that affect how user data is handled would also be communicated in the app's release notes. Given that Liminal currently collects no data at all, any future change in this direction would be a significant and deliberate one.</p>
+
+    <h2>Contact</h2>
+    <p>Questions or concerns about this policy can be sent via <a href="https://github.com/omardgraz/Liminal-Support/issues">GitHub Issues</a> or by visiting our <a href="/Liminal-Support/support.html">support page</a>.</p>
+
+    <footer class="site">
+      <span>© Liminal · made by <a href="https://github.com/omardgraz">omardgraz</a></span>
+      <span>
+        <a href="/Liminal-Support/">Home</a> ·
+        <a href="/Liminal-Support/support.html">Support</a>
+      </span>
+    </footer>
+
+  </div>
+</body>
+</html>
