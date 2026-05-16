@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Liminal</title>
+  <meta name="description" content="Help, FAQs, and contact for Liminal — the offline philosophy app.">
+  <meta name="theme-color" content="#FBF7F0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14110E" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://omardgraz.github.io/Liminal-Support/support.html">
+  <style>
+    :root {
+      --bg: #FBF7F0;
+      --surface: #FFFFFF;
+      --card: #FFFCF6;
+      --divider: #E7DFD0;
+      --text: #1E1A14;
+      --text-2: #5C5246;
+      --text-3: #8A7F70;
+      --brand: #5B3520;
+      --brand-soft: rgba(140, 85, 58, 0.12);
+      --accent: #6A4C93;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14110E;
+        --surface: #1F1B16;
+        --card: #241F19;
+        --divider: #3A322A;
+        --text: #F3ECDD;
+        --text-2: #B8AE9C;
+        --text-3: #847A6B;
+        --brand: #E8C5A4;
+        --brand-soft: rgba(212, 165, 136, 0.15);
+        --accent: #B497D6;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg); color: var(--text);
+      font-family: "Hoefler Text", "Iowan Old Style", "Apple Garamond", Georgia, "Times New Roman", serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+    a:hover { border-bottom-color: var(--accent); }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 32px 24px 80px; }
+    header.site {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 24px 0 12px;
+    }
+    .brand {
+      font-style: italic; font-weight: 600; font-size: 22px;
+      color: var(--brand); border-bottom: none;
+    }
+    nav.site a {
+      margin-left: 18px; font-size: 14px; color: var(--text-2);
+      border-bottom: none;
+    }
+    nav.site a:hover { color: var(--text); }
+    .page-eyebrow {
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+      font-size: 12px; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--accent); margin: 48px 0 12px;
+    }
+    h1 {
+      font-size: clamp(36px, 5vw, 48px); line-height: 1.1;
+      margin: 0 0 8px; letter-spacing: -0.005em;
+      color: var(--brand);
+    }
+    .lede {
+      font-size: 18px; color: var(--text-2); margin: 0 0 32px; max-width: 560px;
+    }
+    .contact-card {
+      background: var(--brand-soft);
+      padding: 22px 24px; border-radius: 16px;
+      margin: 0 0 36px;
+    }
+    .contact-card h3 {
+      margin: 0 0 8px; font-size: 18px;
+      font-family: "Hoefler Text", Georgia, serif; font-style: italic;
+      font-weight: 600; color: var(--brand);
+    }
+    .contact-card p { margin: 0 0 8px; }
+    .contact-card .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 16px; border-radius: 999px;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+      font-size: 14px; font-weight: 600;
+      background: var(--brand); color: var(--bg);
+      border-bottom: none; margin-top: 10px;
+    }
+    .contact-card .btn:hover { opacity: 0.9; border-bottom: none; }
+    h2 {
+      font-size: 22px; margin: 36px 0 12px;
+      color: var(--text); letter-spacing: -0.005em;
+      border-bottom: 1px solid var(--divider); padding-bottom: 6px;
+    }
+    .faq {
+      border-bottom: 1px solid var(--divider);
+    }
+    .faq summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 16px 0;
+      font-weight: 600; font-size: 17px;
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after {
+      content: "+";
+      font-family: serif; font-size: 22px;
+      color: var(--text-3);
+      transition: transform 0.2s ease;
+    }
+    .faq[open] summary::after { content: "−"; }
+    .faq[open] summary { color: var(--brand); }
+    .faq .answer {
+      padding: 0 0 16px;
+      color: var(--text);
+    }
+    .faq .answer p:last-child { margin-bottom: 0; }
+    ul { padding-left: 22px; margin: 0 0 14px; }
+    li { margin-bottom: 6px; color: var(--text); }
+    footer.site {
+      margin-top: 64px; padding-top: 24px;
+      border-top: 1px solid var(--divider);
+      color: var(--text-3); font-size: 13px;
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+    }
+    footer.site a { color: var(--text-2); border-bottom: none; }
+    footer.site a:hover { color: var(--text); }
+    @media (max-width: 480px) {
+      .wrap { padding-left: 18px; padding-right: 18px; }
+      header.site { flex-direction: column; align-items: flex-start; gap: 10px; }
+      nav.site a { margin-left: 0; margin-right: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="site">
+      <a class="brand" href="/Liminal-Support/">Liminal</a>
+      <nav class="site">
+        <a href="/Liminal-Support/">Home</a>
+        <a href="/Liminal-Support/privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <p class="page-eyebrow">Help</p>
+    <h1>Support</h1>
+    <p class="lede">Hit a snag? Have a suggestion? Found a typo in a 2,400-year-old lesson? Reach out — the developer reads everything.</p>
+
+    <div class="contact-card">
+      <h3>Get in touch</h3>
+      <p>The fastest way to reach us is GitHub Issues. You don't need an issue to be a bug — feature requests, content corrections, and general questions are all welcome.</p>
+      <a class="btn" href="https://github.com/omardgraz/Liminal-Support/issues/new" target="_blank" rel="noopener">Open an issue</a>
+    </div>
+
+    <h2>Frequently asked</h2>
+
+    <details class="faq">
+      <summary>Does Liminal need an internet connection?</summary>
+      <div class="answer">
+        <p>No. Liminal is 100% offline. Every lesson, philosopher profile, glossary entry, quiz, and thought experiment is bundled into the app at download. After installing, you can put your phone in airplane mode and never connect again — the app will keep working exactly the same.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Can I sync my progress across my iPhone and iPad?</summary>
+      <div class="answer">
+        <p>Not at the moment. All progress, bookmarks, and notes are stored locally on each device. We chose this deliberately to keep the app fully offline and to collect no data. iCloud sync is on the roadmap — if it ships, it will be optional and end-to-end through Apple's own iCloud, not through any third-party service.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>How do I add a Home Screen widget?</summary>
+      <div class="answer">
+        <p>Long-press an empty area of your home screen until the icons jiggle, tap the <strong>+</strong> button in the top corner, then search for "Liminal". You'll see three widgets to choose from:</p>
+        <ul>
+          <li><strong>Quote of the Day</strong> — a rotating philosophical line.</li>
+          <li><strong>Term of the Day</strong> — a glossary entry to learn each day.</li>
+          <li><strong>Philosopher of the Day</strong> — a new thinker, brief intro, every morning.</li>
+        </ul>
+        <p>Pick a size, drop it on your home screen or Lock Screen, done.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Audio narration stops when I lock my phone — how do I fix that?</summary>
+      <div class="answer">
+        <p>Narration should keep playing with the screen locked. If it cuts out, try the following in order:</p>
+        <ul>
+          <li>Make sure the Silent switch on the side of your iPhone is OFF (orange showing means silent).</li>
+          <li>Quit the app fully (swipe up from the App Switcher) and re-open it. The audio session sometimes needs to be re-armed.</li>
+          <li>Restart your device — if another audio app captured the session, this releases it.</li>
+        </ul>
+        <p>If it still doesn't work, please open an issue and tell us your device + iOS version.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>How does the spaced-repetition review work?</summary>
+      <div class="answer">
+        <p>Liminal uses a simplified SM-2 algorithm (the same family Anki is built on). Each glossary term you study gets scheduled forward based on how confidently you recalled it — Again, Hard, Good, or Easy. Cards you find easy show up less often; cards you forget reset and come back sooner. There's no daily quota; review when you feel like it.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Will more lessons or philosophers be added?</summary>
+      <div class="answer">
+        <p>Yes. Updates are free for everyone who has already purchased the app. The current 92 lessons cover a complete four-year Western philosophy curriculum, but there's plenty of ground left to cover — non-Western traditions, contemporary debates, and deeper readings of the figures already included. Suggestions are welcome.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Is there a free version?</summary>
+      <div class="answer">
+        <p>Liminal is a paid app. There is no free tier, no trial, no in-app purchase, and no subscription. You pay once. You own it forever. Updates are free.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>I want to suggest a topic, correct a typo, or report a factual error.</summary>
+      <div class="answer">
+        <p>Please do. Philosophy is contested terrain, and any single-author summary will get some interpretations wrong. <a href="https://github.com/omardgraz/Liminal-Support/issues/new">Open an issue</a> with the lesson ID (e.g. "PHIL 1.3, lesson 2") and what you'd like changed.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>How do I leave a review?</summary>
+      <div class="answer">
+        <p>If Liminal has helped you, the most useful thing you can do is rate it on the App Store. Reviews from real readers are how new readers find us — and since there's no marketing budget, every star matters.</p>
+      </div>
+    </details>
+
+    <footer class="site">
+      <span>© Liminal · made by <a href="https://github.com/omardgraz">omardgraz</a></span>
+      <span>
+        <a href="/Liminal-Support/">Home</a> ·
+        <a href="/Liminal-Support/privacy.html">Privacy</a>
+      </span>
+    </footer>
+
+  </div>
+</body>
+</html>
